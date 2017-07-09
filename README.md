@@ -1,3 +1,4 @@
+
 # Hadoop Book Example Code
 
 This repository contains the example code for [Hadoop: The Definitive Guide, Fourth Edition](http://shop.oreilly.com/product/0636920033448.do)
@@ -11,6 +12,13 @@ Note that the chapter names and numbering has changed between editions, see
 [First]: http://github.com/tomwhite/hadoop-book/tree/1e
 [Second]: http://github.com/tomwhite/hadoop-book/tree/2e
 [Third]: http://github.com/tomwhite/hadoop-book/tree/3e
+
+#气象数据下载
+老师提供的ftp://ftp3.ncdc.noaa.gov/pub/data/noaa已经转到ftp://ftp.ncdc.noaa.gov/pub/data/noaa了
+可以通过wget或者ftp方式下载
+wget方式：wget -r -c ftp://ftp.ncdc.noaa.gov/pub/data/noaa/2008
+github上也有一些： https://github.com/tomwhite/hadoop-book/tree/master/input/ncdc/all.
+
 
 ## Building and Running
 
