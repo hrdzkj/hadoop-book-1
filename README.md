@@ -51,3 +51,24 @@ For the precise versions of each component that the code has been tested with, s
 ## Copyright
 
 Copyright (C) 2014 Tom White
+
+ch01 - Meet Hadoop
+ch02 - MapReduce
+ch03 - The Hadoop Distributed Filesystem  ----使用FileSystem
+ch04 - Hadoop I/O
+ch05 - Developing a MapReduce Application
+ch06 - How MapReduce Works
+ch07 - MapReduce Types and Formats
+ch08 - MapReduce Features
+ch09 - Setting Up a Hadoop Cluster
+ch10 - Administering Hadoop
+ch11 - Pig
+ch12 - Hive
+ch13 - HBase
+ch14 - ZooKeeper
+ch15 - Sqoop
+ch16 - Case Studies
+
+app1 - Installing Apache Hadoop
+app2 - Cloudera's Distribution for Hadoop
+app3 - Preparing the NCDC Weather Data
