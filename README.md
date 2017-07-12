@@ -54,7 +54,8 @@ Copyright (C) 2014 Tom White
 
 ch01 - Meet Hadoop
 ch02 - MapReduce
-ch03 - The Hadoop Distributed Filesystem  ----使用FileSystem
+ch03 - The Hadoop Distributed Filesystem 
+       使用FileSystem，方法get,create open
 ch04 - Hadoop I/O
 ch05 - Developing a MapReduce Application
 ch06 - How MapReduce Works
