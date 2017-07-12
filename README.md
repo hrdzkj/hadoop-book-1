@@ -48,7 +48,5 @@ Hadoop 1, although most of it should work.
 For the precise versions of each component that the code has been tested with, see 
 [book/pom.xml](book/pom.xml).
 
-Chapter names for "Hadoop: The Definitive Guide", Third Edition
- **Chapter names for "Hadoop: The Definitive Guide", Third Edition: **
-ch03 - The Hadoop Distributed Filesystem
+ **Chapter names**
 
