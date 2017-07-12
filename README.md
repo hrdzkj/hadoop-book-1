@@ -48,6 +48,8 @@ Hadoop 1, although most of it should work.
 For the precise versions of each component that the code has been tested with, see 
 [book/pom.xml](book/pom.xml).
 
+hadoop的序列化办法好像更加高效。
+
  **Chapter names:**
 *   ch03 - The Hadoop Distributed Filesystem    
     FileSystem用法: get,create,listStatus  
