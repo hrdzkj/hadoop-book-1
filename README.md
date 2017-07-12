@@ -49,4 +49,5 @@ For the precise versions of each component that the code has been tested with, s
 [book/pom.xml](book/pom.xml).
 
  **Chapter names:**
-*   Red
+*   ch03 - The Hadoop Distributed Filesystem
+*   ch04 - Hadoop I/O
