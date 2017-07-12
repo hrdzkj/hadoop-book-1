@@ -50,6 +50,6 @@ For the precise versions of each component that the code has been tested with, s
 
  **Chapter names:**
 *   ch03 - The Hadoop Distributed Filesystem  
-    <br FileSystem用法，get,create,listStatus
-    IOUtils.copyBytes />
+      FileSystem用法，get,create,listStatus
+    IOUtils.copyBytes
 *   ch04 - Hadoop I/O
