@@ -49,5 +49,4 @@ For the precise versions of each component that the code has been tested with, s
 [book/pom.xml](book/pom.xml).
 
  **Chapter names:**
-*ch03
-*ch04
+*   Red
