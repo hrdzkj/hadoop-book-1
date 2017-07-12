@@ -54,4 +54,4 @@ For the precise versions of each component that the code has been tested with, s
     IOUtils: copyBytes  
 *   ch04 - Hadoop I/O  
     CompressionCodecFactory: removeSuffix  getCodec   
-    CompressionCodec: getDefaultExtension  createInputStream  
+    CompressionCodec: getDefaultExtension  createInputStream和createOutputStream是两个互为逆运算。
