@@ -53,5 +53,5 @@ For the precise versions of each component that the code has been tested with, s
     FileSystem用法: get,create,listStatus  
     IOUtils: copyBytes  
 *   ch04 - Hadoop I/O  
-    CompressionCodecFactory: removeSuffix getCodec   
+    CompressionCodecFactory: removeSuffix  getCodec   
     CompressionCodec: getDefaultExtension  createInputStream  
