@@ -50,11 +50,11 @@ For the precise versions of each component that the code has been tested with, s
 
 ## Copyright
 
-Copyright (C) 2014 Tom White
+Chapter names for "Hadoop: The Definitive Guide", Third Edition
 
 ch01 - Meet Hadoop
 ch02 - MapReduce
-ch03 - The Hadoop Distributed Filesystem 
+ch03 - The Hadoop Distributed Filesystem
 ch04 - Hadoop I/O
 ch05 - Developing a MapReduce Application
 ch06 - How MapReduce Works
