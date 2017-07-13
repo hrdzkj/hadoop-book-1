@@ -73,4 +73,15 @@ hadoop的序列化办法好像更加高效。
   Compressor compressor = CodecPool.getCompressor(ReflectionUtils.newInstance(codecClass, conf));
   ......  
   CodecPool.returnCompressor(compressor);
-  
+  对比：读写MapFile和SequenceFile文件：MapFileWriteDemo.java和SequenceFileReadDemo.java SequenceFileWriteDemo.java  
+  读取SequenceFile（SequenceFileReadDemo.java）   ：  
+  SequenceFile.Reader reader = new SequenceFile.Reader(fs, path, conf);   
+  Writable key = (Writable) ReflectionUtils.newInstance(reader.getKeyClass(), conf);     
+  Writable value = (Writable)ReflectionUtils.newInstance(reader.getValueClass(), conf);    
+  long position = reader.getPosition();    
+  reader.next(key, value)；
+  IOUtils.closeStream(reader);
+  写入SequenceFile（SequenceFileWriteDemo.java）：     
+  SequenceFile.Writer  writer = SequenceFile.createWriter(fs, conf, path,key.getClass(), value.getClass());
+  writer.append(key, value);
+  IOUtils.closeStream(writer);
