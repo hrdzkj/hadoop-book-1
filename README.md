@@ -90,3 +90,5 @@ hadoop的序列化办法好像更加高效。
   CompressionOutputStream out = codec.createOutputStream(System.out);
   IOUtils.copyBytes(System.in, out, 4096, false);
    out.finish();
+  Text的迭代(TextIterator.java):     
+在Text中对unicode字符的迭代是相当复杂的，因为与unicode所占的字节数有关，不能简单的使用index的增长来确定。首先要把Text对象使用ByteBuffer进行封装，然后再调用Text的静态方法bytesToCodePoint对ByteBuffer进行轮询返回unicode字符的code point
