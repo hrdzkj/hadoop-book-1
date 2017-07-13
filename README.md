@@ -57,4 +57,9 @@ hadoop的序列化办法好像更加高效。
 *   ch04 - Hadoop I/O  
     CompressionCodecFactory: removeSuffix  getCodec   
     CompressionCodec: getDefaultExtension  createInputStream和createOutputStream是两个互为逆运算。   
-    逆运算：A的任意两个元素a和b，通过所给的运算，可以得到一个结果c．反过来，如果已知元素c，以及元素a，b中的一个，按照某种法则，可以得到另一个元素，这样的法则也定义了一种运算，这样的运算叫做原来运算的逆运算
+    逆运算：A的任意两个元素a和b，通过所给的运算，可以得到一个结果c．反过来，如果已知元素c，以及元素a，b中的一个，按照某种法则，可以得到另一个元素，这样的法则也定义了一种运算，这样的运算叫做原来运算的逆运算  
+    重建索引(MapFileFixer.java)：MapFile.fix(fs, map, keyClass, valueClass, false, conf)
+    创建MapFile(MapFileWriteDemo.java)：MapFile.Writer writer = new MapFile.Writer(conf, fs, uri,key.getClass(), value.getClass());  
+                 writer.append(key, value);   
+                 IOUtils.closeStream(writer);
+                 
