@@ -94,5 +94,6 @@ hadoop的序列化办法好像更加高效。
 在Text中对unicode字符的迭代是相当复杂的，因为与unicode所占的字节数有关，不能简单的使用index的增长来确定。首先要把Text对象使用ByteBuffer进行封装，然后再调用Text的静态方法bytesToCodePoint对ByteBuffer进行轮询返回unicode字符的code point   
 *   ch05    
 本地作业运行器：http://book.51cto.com/art/201106/269674.htm    
-*   ch06 - How MapReduce Works      
+*   ch06 - How MapReduce Works       
+*   ch07 - MapReduce Types and Formats
 
