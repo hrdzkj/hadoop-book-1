@@ -68,4 +68,9 @@ hadoop的序列化办法好像更加高效。
              Configuration conf = new Configuration();   
              conf.setBoolean("mapred.compress.map.output", true);   
              conf.setClass("mapred.map.output.compression.codec",GzipCodec.class, CompressionCodec.class);   
-             Job job=new Job(conf); 
+             Job job=new Job(conf);   
+  CodecPool(PooledStreamCompressor.java): 有点象连接迟，这样你就无需频繁的去创建codec对象.     
+  Compressor compressor = CodecPool.getCompressor(ReflectionUtils.newInstance(codecClass, conf));
+  ......  
+  CodecPool.returnCompressor(compressor);
+  
