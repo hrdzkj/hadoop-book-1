@@ -84,4 +84,9 @@ hadoop的序列化办法好像更加高效。
   写入SequenceFile（SequenceFileWriteDemo.java）：     
   SequenceFile.Writer  writer = SequenceFile.createWriter(fs, conf, path,key.getClass(), value.getClass());
   writer.append(key, value);
-  IOUtils.closeStream(writer);
+  IOUtils.closeStream(writer);   
+  CompressionCodec封装一个流（StreamCompressor.java）：    
+  CompressionCodec codec = (CompressionCodec)ReflectionUtils.newInstance(codecClass, conf);    
+  CompressionOutputStream out = codec.createOutputStream(System.out);
+  IOUtils.copyBytes(System.in, out, 4096, false);
+   out.finish();
