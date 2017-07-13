@@ -80,8 +80,8 @@ hadoop的序列化办法好像更加高效。
   Writable value = (Writable)ReflectionUtils.newInstance(reader.getValueClass(), conf);    
   long position = reader.getPosition();    
   reader.next(key, value)；
-  IOUtils.closeStream(reader);
-  写入SequenceFile（SequenceFileWriteDemo.java）：     
+  IOUtils.closeStream(reader);      
+  写入SequenceFile（SequenceFileWriteDemo.java）：     
   SequenceFile.Writer  writer = SequenceFile.createWriter(fs, conf, path,key.getClass(), value.getClass());
   writer.append(key, value);
   IOUtils.closeStream(writer);
