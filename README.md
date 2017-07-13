@@ -61,5 +61,11 @@ hadoop的序列化办法好像更加高效。
     重建索引(MapFileFixer.java)：MapFile.fix(fs, map, keyClass, valueClass, false, conf)
     创建MapFile(MapFileWriteDemo.java)：MapFile.Writer writer = new MapFile.Writer(conf, fs, uri,key.getClass(), value.getClass());  
                  writer.append(key, value);   
-                 IOUtils.closeStream(writer);
-                 
+                 IOUtils.closeStream(writer);  
+    压缩输出(MaxTemperatureWithCompression.java)：FileOutputFormat.setCompressOutput(job, true);
+             FileOutputFormat.setOutputCompressorClass(job, GzipCodec.class);    
+             或者（MaxTemperatureWithMapOutputCompression.java）：可以更改mapred.output.compress为true，mapped.output.compression.codec为想要使用的codec的类名就可以了   
+             Configuration conf = new Configuration();   
+             conf.setBoolean("mapred.compress.map.output", true);   
+             conf.setClass("mapred.map.output.compression.codec",GzipCodec.class, CompressionCodec.class);   
+             Job job=new Job(conf); 
