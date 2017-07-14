@@ -96,4 +96,8 @@ hadoop的序列化办法好像更加高效。
 本地作业运行器：http://book.51cto.com/art/201106/269674.htm    
 *   ch06 - How MapReduce Works       
 *   ch07 - MapReduce Types and Formats
+输入输出
+MultipleOutputs(PartitionByStationUsingMultipleOutputs.java)--多输出，请看一下官方api有介绍http://hadoop.apache.org/docs/stable/api/index.html
+小文件合成SequenceFile(SmallFilesToSequenceFileConverter.java)
+
 
